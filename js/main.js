@@ -5,15 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
     if (mobileMenuButton) {
         mobileMenuButton.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+            // 메뉴가 열렸을 때 스크롤 방지
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        // 메뉴 항목 클릭시 자동으로 메뉴 닫기
+        const menuItems = navLinks.querySelectorAll('a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            });
         });
     }
-
-    // 메뉴 항목 클릭시 자동으로 닫기
-    navLinks.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A') {
-            navLinks.classList.remove('active');
-        }
-    });
 
     // 스크롤시 메뉴 닫기
     window.addEventListener('scroll', function() {

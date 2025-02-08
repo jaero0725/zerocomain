@@ -1,0 +1,19 @@
+<svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Z -->
+    <path d="M30 12H80M30 38H80M80 12L30 38" 
+          stroke="currentColor" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- C -->
+    <path d="M100 12C120 12 140 12 140 25C140 38 120 38 100 38" 
+          stroke="currentColor" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- 장식 점 -->
+    <circle cx="155" cy="25" r="4" 
+            fill="currentColor"/>
+</svg> 

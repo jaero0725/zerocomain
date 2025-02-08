@@ -18,38 +18,137 @@ body {
 /* 헤더 스타일 수정 */
 .header {
     position: fixed;
-    top: 0;
     width: 100%;
-    background: rgba(26, 26, 26, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem 5%;
     z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 20px 0;
+}
+
+.header .nav-links a {
+    color: #fff; /* 초기 상태: 흰색 글씨 */
+    transition: all 0.3s ease;
+}
+
+/* 스크롤 시 헤더 스타일 */
+.header.scrolled {
+    background: #fff; /* 흰색 배경 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.header.scrolled .nav-links a {
+    color: #333; /* 스크롤 시: 어두운 글씨 */
+}
+
+.header.scrolled .nav-links a:hover {
+    color: #111; /* 호버 시: 더 진한 색상 */
+}
+
+/* CTA 버튼 스타일 */
+.header.scrolled .nav-links .cta-button {
+    background: #111;
+    color: #fff;
+}
+
+.header.scrolled .nav-links .cta-button:hover {
+    background: #222;
+}
+
+/* 로고 스타일 */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo-image {
+    height: 100%;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+/* 스크롤 전 로고 (흰색) */
+.header:not(.scrolled) .logo-image {
+    filter: brightness(0) invert(1);
+}
+
+/* 스크롤 후 로고 (검은색) */
+.header.scrolled .logo-image {
+    filter: none;
+}
+
+/* 호버 효과 */
+.logo-image:hover {
+    transform: scale(1.02);
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 20px;
+    }
+
+    .logo {
+        height: 38px;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #111;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .nav-links .cta-button {
+        margin-left: 0;
+        margin-top: 12px;
+        background: #fff;
+        color: #111;
+    }
 }
 
 .nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-color);
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
-}
-
-.nav-links a {
-    font-weight: 500;
-    transition: color 0.3s;
+    align-items: center;
+    gap: 48px;  /* 메뉴 간격 증가 */
 }
 
 .nav-links a:hover {
@@ -843,7 +942,34 @@ footer {
 
 /* 전역 폰트 설정 */
 * {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+/* 헤더 폰트 가중치 조정 */
+.nav-links a {
+    font-weight: 500;
+}
+
+.nav-links .cta-button {
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+/* 본문 텍스트 가중치 */
+p, span, div {
+    font-weight: 400;
+}
+
+/* 버튼 텍스트 */
+button, .button {
+    font-weight: 500;
 }
 
 /* 팀 섹션 스타일 */
@@ -954,4 +1080,70 @@ footer {
 .skill-tag:hover {
     background: #444;
     transform: scale(1.05);
+}
+
+/* 체크리스트 스타일 */
+.checklist-container {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 0 20px;
+}
+
+.checklist-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.checklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.checklist-item {
+    background: var(--secondary-bg);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.checklist-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.checklist-item h3 {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.checklist-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+    .checklist-container {
+        margin: 100px auto 40px;
+    }
+
+    .checklist-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .checklist {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .checklist-item {
+        padding: 20px;
+    }
 } 

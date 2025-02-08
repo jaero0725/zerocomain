@@ -11,7 +11,9 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <div class="logo">ZEROCO</div>
+            <div class="logo">
+                <img src="../images/logo.svg" alt="ZEROCO" class="logo-image">
+            </div>
             <button class="mobile-menu-button">☰</button>
             <ul class="nav-links">
                 <li><a href="/">소개</a></li>
@@ -24,72 +26,61 @@
     </header>
 
     <main class="contact-page">
-        <section class="contact-container">
-            <h1>견적 문의</h1>
-            <div class="contact-content">
-                <div class="contact-info-box">
-                    <h2>문의 전 체크리스트✓</h2>
-                    <ul class="contact-guidelines">
-                        <li class="guideline-item">
-                            <span class="guideline-icon">🎯</span>
-                            <strong>프로젝트 목표</strong>
-                            <p>개발하고자 하는 서비스의 핵심 목표를 알려주세요</p>
-                        </li>
-                        <li class="guideline-item">
-                            <span class="guideline-icon">📋</span>
-                            <strong>주요 기능</strong>
-                            <p>필요한 핵심 기능들을 리스트로 정리해주세요</p>
-                        </li>
-                        <li class="guideline-item">
-                            <span class="guideline-icon">📅</span>
-                            <strong>일정 계획</strong>
-                            <p>원하시는 개발 시작일과 완료일을 공유해주세요</p>
-                        </li>
-                        <li class="guideline-item">
-                            <span class="guideline-icon">💰</span>
-                            <strong>예산 범위</strong>
-                            <p>프로젝트 예산이 정해져 있다면 말씀해주세요</p>
-                        </li>
-                    </ul>
+        <!-- 체크리스트 섹션 -->
+        <section class="checklist-container">
+            <h2>문의 전 체크리스트</h2>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <h3>1. 프로젝트 기간</h3>
+                    <p>예상하시는 프로젝트 기간이 정해져 있나요?</p>
                 </div>
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">이름 *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">이메일 *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">연락처</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="project-type">프로젝트 종류 *</label>
-                        <select id="project-type" name="project-type" required>
-                            <option value="">선택해주세요</option>
-                            <option value="website">웹사이트 제작</option>
-                            <option value="webapp">웹 애플리케이션</option>
-                            <option value="maintenance">유지보수</option>
-                            <option value="other">기타</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="deadline">희망 기한</label>
-                        <input type="date" id="deadline" name="deadline">
-                    </div>
-                    <div class="form-group">
-                        <label for="description">프로젝트 설명 *</label>
-                        <textarea id="description" name="description" rows="5" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="reference">참고사항</label>
-                        <textarea id="reference" name="reference" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">견적 문의하기</button>
-                </form>
+                <div class="checklist-item">
+                    <h3>2. 예산</h3>
+                    <p>프로젝트 예산 범위가 설정되어 있나요?</p>
+                </div>
+                <div class="checklist-item">
+                    <h3>3. 레퍼런스</h3>
+                    <p>참고하실 만한 유사 서비스나 웹사이트가 있나요?</p>
+                </div>
+                <div class="checklist-item">
+                    <h3>4. 기능 명세</h3>
+                    <p>필요한 주요 기능들이 정리되어 있나요?</p>
+                </div>
             </div>
+        </section>
+
+        <!-- 견적 문의 폼 섹션 -->
+        <section class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">이름 *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일 *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">연락처 *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">예상 예산</label>
+                    <select id="budget" name="budget">
+                        <option value="">선택해주세요</option>
+                        <option value="50">50만원 이하</option>
+                        <option value="200">50만원 ~ 200만원</option>
+                        <option value="500">200만원 ~ 500만원</option>
+                        <option value="1000">500만원 ~ 1,000만원</option>
+                        <option value="1001">1,000만원 이상</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">프로젝트 내용 *</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">문의하기</button>
+            </form>
         </section>
     </main>
 
