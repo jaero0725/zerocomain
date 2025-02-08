@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const navLinks = document.querySelector('.nav-links');
 
-    mobileMenuButton.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
+    if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    }
 
     // 메뉴 항목 클릭시 자동으로 닫기
     navLinks.addEventListener('click', function(e) {

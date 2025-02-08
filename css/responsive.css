@@ -4,25 +4,38 @@
         font-size: 2.5rem;
     }
 
+    .mobile-menu-button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .nav {
+        position: relative;
+        padding: 15px 20px;
+    }
+
     .nav-links {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
-        background: var(--bg-color);
-        padding: 1rem;
+        right: 0;
+        background-color: white;
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .nav-links.active {
         display: flex;
     }
 
-    .mobile-menu-btn {
-        display: block;
+    .nav-links li {
+        margin: 10px 0;
     }
 
     .footer-content {
@@ -72,6 +85,25 @@
 
     .slider-controls {
         margin-top: 1.5rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .member-image {
+        height: 250px;
+    }
+
+    .team {
+        padding: 40px 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-button {
+        display: none;
     }
 }
 

@@ -839,4 +839,119 @@ footer {
     .clients-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* 전역 폰트 설정 */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 팀 섹션 스타일 */
+.team {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header .tag {
+    display: inline-block;
+    background: #333;
+    color: #00ff9d;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.section-header h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.section-description {
+    color: #999;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.member-card {
+    background: #252525;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    padding: 30px;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: #2a2a2a;
+}
+
+.member-emoji {
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.position {
+    color: #00ff9d;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.description {
+    color: #bbb;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: #333;
+    color: #00ff9d;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background: #444;
+    transform: scale(1.05);
 } 
