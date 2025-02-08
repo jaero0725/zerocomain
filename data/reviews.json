@@ -1,0 +1,337 @@
+{
+    "reviews": [
+        {
+            "rating": 5.0,
+            "date": "24.12.16",
+            "author": "익명",
+            "content": "결과물에 만족합니다. 감사합니다.",
+            "workDuration": "3일",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.12.03",
+            "author": "익명",
+            "content": "만족해요",
+            "workDuration": "1일",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.11.28",
+            "author": "익명",
+            "content": "항상 잘만들어주셔서 만족합니다",
+            "workDuration": "11일",
+            "projectCost": "20만원 ~ 30만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.11.27",
+            "author": "익명",
+            "content": "신속하고 친절하게 상담해주셨습니다. 저렴한 값에 많은 도움 받았습니다 감사합니다.",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.11.15",
+            "author": "익명",
+            "content": "항상 만족해요",
+            "workDuration": "3일",
+            "projectCost": "20만원 ~ 30만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.11.12",
+            "author": "익명",
+            "content": "항상 만족합니다.",
+            "workDuration": "24시간이내",
+            "projectCost": "20만원 ~ 30만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.11.06",
+            "author": "익명",
+            "content": "빠른처리 감사합니다",
+            "workDuration": "24시간이내",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.10.29",
+            "author": "익명",
+            "content": "친절하고 빠른 일처리 감사합니다!!",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.10.28",
+            "author": "익명",
+            "content": "실력이 출중하신 개발자님이십니다. 항상 믿고 맡깁니다",
+            "workDuration": "5일",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.10.06",
+            "author": "익명",
+            "content": "완벽하게 작업해주셔서 감사합니다.",
+            "workDuration": "2일",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.10.04",
+            "author": "익명",
+            "content": "매번 원하는 기능들, 요청사항들 잘만들어주세요ㅡ 만족합니다",
+            "workDuration": "53일",
+            "projectCost": "100만원 ~ 200만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.08.16",
+            "author": "익명",
+            "content": "결과물에 항상 만족합니다.",
+            "workDuration": "1일",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.08.01",
+            "author": "익명",
+            "content": "작업 대응도 잘해주시고 설명도 잘해주셨어요. 전체적으로 깔끔한 마무리해주셔서 만족스럽습니다. 진심으로 감사드려요~!",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.30",
+            "author": "익명",
+            "content": "마음에 들도록 작업 잘해주세요! 번창하시길요: )",
+            "workDuration": "3일",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.29",
+            "author": "익명",
+            "content": "수정사항 피드백 좋으세요! 원하시는대로 해주셨어요^^",
+            "workDuration": "3일",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.29",
+            "author": "익명",
+            "content": "작업물 잘 받았어요. 너무 잘해주셔서 정말 감사드려요!",
+            "workDuration": "3일",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.23",
+            "author": "익명",
+            "content": "빠른 속도로 작업해주셨어요 만족합니다.",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.23",
+            "author": "익명",
+            "content": "매번 잘만들어주셔서 만족해요",
+            "workDuration": "2일",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.20",
+            "author": "익명",
+            "content": "원하는대로 잘만들어주세요 만족해요",
+            "workDuration": "1일",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.09",
+            "author": "익명",
+            "content": "매번 요청하는것들 잘 만들어주셔서 만족합니다.",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.04",
+            "author": "익명",
+            "content": "결과물에 만족해요ㅡ",
+            "workDuration": "68일",
+            "projectCost": "30만원 ~ 40만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.07.03",
+            "author": "익명",
+            "content": "결과물에 항상 만족합니다.",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.06.19",
+            "author": "익명",
+            "content": "항상 잘만들어주세요",
+            "workDuration": "1일",
+            "projectCost": "30만원 ~ 40만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.06.13",
+            "author": "익명",
+            "content": "결과에 항상 만족합니다",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.06.01",
+            "author": "익명",
+            "content": "원하는 기능을 잘만들어주셨어요",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.05.16",
+            "author": "익명",
+            "content": "결과물에 만족합니다. 원하는 기능을 잘 처리해주세요",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.05.13",
+            "author": "익명",
+            "content": "항상최고입니다!!!",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.05.02",
+            "author": "익명",
+            "content": "매번 원하는 기능 및 문제에 대해 잘적용해주세요 만족합니다.",
+            "workDuration": "2일",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.05.01",
+            "author": "익명",
+            "content": "매번 좋은 코딩과 문제 해결 해주셔서 감사합니다!!!",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.04.09",
+            "author": "익명",
+            "content": "최고입니다 언제나 친절하세요~",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.04.03",
+            "author": "익명",
+            "content": "정말 친절하게 해주셨습니다 감사합니다 다음에또이용할게요~",
+            "workDuration": "2일",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.04.01",
+            "author": "익명",
+            "content": "만족합니다. 원하는대로 개발을 잘해주셨어요",
+            "workDuration": "2일",
+            "projectCost": "20만원 ~ 30만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.04.01",
+            "author": "익명",
+            "content": "꼼꼼하게 잘 해주셨어요. 정말 실력자!!!!",
+            "workDuration": "2일",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.03.22",
+            "author": "익명",
+            "content": "작업 속도 퀄리티 모두 만족합니다",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.03.21",
+            "author": "익명",
+            "content": "만족합니다! 원하는대로 잘 만들어주세요 앞으로도 계속 요청드리고 싶어요~",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 미만"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.03.07",
+            "author": "익명",
+            "content": "요구사항대로 빠른 작업 감사합니다.",
+            "workDuration": "1일",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.03.06",
+            "author": "익명",
+            "content": "실력이 좋으셔서 알아서 척척 요청드린 대로 꼼꼼하고 빠르게 작업물 완성해주셨어요 ㅎㅎ다음에 또 작업이 필요하면 제로코님한테 의뢰할것 같아요! 감사합니다 :)",
+            "workDuration": "1일",
+            "projectCost": "10만원 ~ 20만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.03.06",
+            "author": "익명",
+            "content": "원하는 작업들을 잘 만들어주셨어요ㅡ 너무 만족합니다, 감사합니다,",
+            "workDuration": "10일",
+            "projectCost": "20만원 ~ 30만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.02.20",
+            "author": "익명",
+            "content": "어려운 작업인데 잘진행해주시고 감사합니다.",
+            "workDuration": "16일",
+            "projectCost": "5만원 ~ 10만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.02.17",
+            "author": "익명",
+            "content": "신속,정확,친절,센스 최고입니다 계속 거래 하겠습니다!!",
+            "workDuration": "2일",
+            "projectCost": "20만원 ~ 30만원"
+        },
+        {
+            "rating": 5.0,
+            "date": "24.02.04",
+            "author": "익명",
+            "content": "응답도 빠르고 친절하십니다. 설명이 제대로 안됐는 것 같지만 그래도 잘 맞춰서 빠르게 작업 해주셨습니다.",
+            "workDuration": "24시간이내",
+            "projectCost": "5만원 미만"
+        }
+    ],
+    "stats": {
+        "totalReviews": 45,
+        "averageRating": 5.0,
+        "completedProjects": 45
+    }
+} 

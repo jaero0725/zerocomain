@@ -1,0 +1,55 @@
+{
+    "projects": [
+        {
+            "title": "예스렌터카",
+            "description": "렌터카 예약 및 관리 시스템",
+            "image": "assets/images/yesrent.png",
+            "technologies": ["PHP", "MySQL", "JavaScript"],
+            "url": "https://yes-rent.co.kr/",
+            "details": [
+                "렌터카 예약 시스템 구축",
+                "관리자 대시보드 개발",
+                "실시간 예약 현황 관리"
+            ],
+            "year": "2023"
+        },
+        {
+            "title": "드림렌터카",
+            "description": "Spring Boot 기반 렌터카 플랫폼",
+            "image": "assets/images/dreamrent.png",
+            "technologies": ["Spring Boot", "Java", "MySQL", "JavaScript"],
+            "url": "https://yes-rent.co.kr/",
+            "details": [
+                "Spring Boot 기반 백엔드 개발",
+                "실시간 예약 시스템 구축",
+                "데이터베이스 설계 및 구현"
+            ],
+            "year": "2023"
+        },
+        {
+            "title": "네이버스마트스토어 알림톡",
+            "description": "주문/배송 자동 알림 시스템",
+            "image": "assets/images/smartstore.png",
+            "technologies": ["Node.js", "카카오 알림톡 API", "네이버 커머스 API"],
+            "details": [
+                "네이버 스마트스토어 주문 연동",
+                "카카오 알림톡 자동 발송",
+                "실시간 주문 상태 추적",
+                "관리자 대시보드 제공"
+            ],
+            "year": "2024"
+        },
+        {
+            "title": "웹빌더 시스템",
+            "description": "맞춤형 웹사이트 제작 플랫폼",
+            "image": "assets/images/web-builder.jpg",
+            "technologies": ["JavaScript", "React", "Node.js"],
+            "details": [
+                "드래그 앤 드롭 인터페이스",
+                "다양한 템플릿 제공",
+                "실시간 미리보기 기능"
+            ],
+            "year": "2023"
+        }
+    ]
+} 

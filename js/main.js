@@ -1,17 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 모바일 메뉴 토글
-    const mobileMenuBtn = document.createElement('button');
-    mobileMenuBtn.className = 'mobile-menu-btn';
-    mobileMenuBtn.innerHTML = '☰';
-    mobileMenuBtn.style.display = 'none';
-
-    const nav = document.querySelector('.nav');
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const navLinks = document.querySelector('.nav-links');
 
-    nav.insertBefore(mobileMenuBtn, navLinks);
-
-    mobileMenuBtn.addEventListener('click', () => {
+    mobileMenuButton.addEventListener('click', function() {
         navLinks.classList.toggle('active');
+    });
+
+    // 메뉴 항목 클릭시 자동으로 닫기
+    navLinks.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+            navLinks.classList.remove('active');
+        }
+    });
+
+    // 스크롤시 메뉴 닫기
+    window.addEventListener('scroll', function() {
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+        }
     });
 
     // 스크롤 애니메이션

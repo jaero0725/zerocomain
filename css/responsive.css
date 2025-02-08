@@ -28,7 +28,15 @@
     .footer-content {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
+        gap: 1.5rem;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+
+    .contact-info .info-item {
+        justify-content: center;
     }
 
     .portfolio-grid h1 {
@@ -47,6 +55,23 @@
     .reviews-grid {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1.5rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info-box {
+        padding: 1.5rem;
+    }
+
+    .portfolio-slider {
+        padding: 2rem 0;
+    }
+
+    .slider-controls {
+        margin-top: 1.5rem;
     }
 }
 
@@ -88,5 +113,38 @@
 
     .review-card {
         padding: 1.5rem;
+    }
+
+    .contact-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-content {
+        padding: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .footer-content {
+        gap: 1rem;
+    }
+
+    .contact-info .company-name {
+        font-size: 1.1rem;
+    }
+
+    .contact-info .info-item {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-slider h2 {
+        font-size: 1.5rem;
+    }
+
+    .slider-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
     }
 } 
