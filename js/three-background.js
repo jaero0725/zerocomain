@@ -32,7 +32,7 @@ class ThreeBackground {
     createObjects() {
         // 파티클 수 감소 및 단순화
         const particlesGeometry = new THREE.BufferGeometry();
-        const particlesCount = 100; // 파티클 수 대폭 감소
+        const particlesCount = 100; 
         const positions = new Float32Array(particlesCount * 3);
 
         for(let i = 0; i < particlesCount * 3; i += 3) {

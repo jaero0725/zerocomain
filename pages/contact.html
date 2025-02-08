@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>견적 문의 - ZEROCO</title>
+    <title>견적문의 - ZEROCO</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -49,38 +50,57 @@
             </div>
         </section>
 
-        <!-- 견적 문의 폼 섹션 -->
-        <section class="contact-container">
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">이름 *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">이메일 *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">연락처 *</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="budget">예상 예산</label>
-                    <select id="budget" name="budget">
-                        <option value="">선택해주세요</option>
-                        <option value="50">50만원 이하</option>
-                        <option value="200">50만원 ~ 200만원</option>
-                        <option value="500">200만원 ~ 500만원</option>
-                        <option value="1000">500만원 ~ 1,000만원</option>
-                        <option value="1001">1,000만원 이상</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">프로젝트 내용 *</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">문의하기</button>
-            </form>
+        <!-- 견적문의 폼 섹션 -->
+        <section class="contact-form-section">
+            <div class="content-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">이름 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" name="phone" placeholder="예: 010-1234-5678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">회사/단체명</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">예산 범위</label>
+                        <select id="budget" name="budget">
+                            <option value="">선택해주세요</option>
+                            <option value="1000만원 미만">1000만원 미만</option>
+                            <option value="1000-3000만원">1000-3000만원</option>
+                            <option value="3000-5000만원">3000-5000만원</option>
+                            <option value="5000만원 이상">5000만원 이상</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deadline">희망 완료일</label>
+                        <input type="date" id="deadline" name="deadline">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">프로젝트 내용 *</label>
+                        <textarea id="message" name="message" rows="6" required 
+                            placeholder="프로젝트의 목적, 주요 기능, 참고 사이트 등을 자유롭게 작성해주세요."></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="button" class="submit-btn">견적 문의하기</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -103,7 +123,6 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
     <script src="../js/contact.js"></script>
 </body>
 </html> 

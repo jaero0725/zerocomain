@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 사이트 개발 - ZEROCO</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="../images/logo.svg" alt="ZEROCO" class="logo-image">
+            </div>
+            <button class="mobile-menu-button">☰</button>
+            <ul class="nav-links">
+                <li><a href="/">소개</a></li>
+                <li><a href="/pages/team.html">팀 소개</a></li>
+                <li><a href="/pages/portfolio.html">포트폴리오</a></li>
+                <li><a href="/pages/reviews.html">개발후기</a></li>
+                <li><a href="/pages/contact.html" class="cta-button">견적문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="web-development-page">
+        <section class="description">
+            <div class="content-wrapper">
+                <h1>제공하는 서비스</h1>
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="modern">모던 웹 개발</button>
+                        <button class="tab-button" data-tab="website">웹사이트 개발/유지보수</button>
+                        <button class="tab-button" data-tab="commerce">커머스 솔루션</button>
+                        <button class="tab-button" data-tab="backend">백엔드 개발</button>
+                        <button class="tab-button" data-tab="seo">테크니컬 SEO</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="modern">
+                        <div class="service-overview">
+                            <h2>Three.js 활용 사례</h2>
+                            <p>3D 인터랙션으로 더 풍부한 웹 경험을 제공합니다</p>
+                        </div>
+
+                        <div class="threejs-examples">
+                            <div class="example-grid">
+                                <div class="example-item">
+                                    <h3>제품 3D 뷰어</h3>
+                                    <button class="view-demo" data-demo="product-viewer">
+                                        <div class="three-container" id="preview-product-viewer">
+                                            <!-- 미리보기 이미지 -->
+                                        </div>
+                                    </button>
+                                    <p class="example-desc">
+                                        - 제품을 360도로 확인<br>
+                                        - 확대/축소 기능<br>
+                                        - 색상 변경 시뮬레이션
+                                    </p>
+                                </div>
+
+                                <div class="example-item">
+                                    <h3>인터랙티브 배경</h3>
+                                    <div class="three-container" id="interactive-bg">
+                                        <!-- Three.js 인터랙티브 배경이 렌더링될 공간 -->
+                                    </div>
+                                    <p class="example-desc">
+                                        - 마우스 움직임 반응<br>
+                                        - 파티클 애니메이션<br>
+                                        - 성능 최적화 구현
+                                    </p>
+                                </div>
+
+                                <div class="example-item">
+                                    <h3>3D 아키텍처 시각화</h3>
+                                    <div class="three-container" id="architecture-view">
+                                        <!-- Three.js 건축 시각화가 렌더링될 공간 -->
+                                    </div>
+                                    <p class="example-desc">
+                                        - 건물/인테리어 미리보기<br>
+                                        - 조명/그림자 효과<br>
+                                        - 가상 투어 기능
+                                    </p>
+                                </div>
+
+                                <div class="example-item">
+                                    <h3>3D 데이터 시각화</h3>
+                                    <div class="three-container" id="data-viz">
+                                        <!-- Three.js 데이터 시각화가 렌더링될 공간 -->
+                                    </div>
+                                    <p class="example-desc">
+                                        - 통계 데이터 3D 표현<br>
+                                        - 실시간 데이터 업데이트<br>
+                                        - 인터랙티브 그래프
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="website">
+                        <div class="service-overview">
+                            <h2>웹사이트 개발 및 유지보수</h2>
+                            <p>다양한 플랫폼 기반의 맞춤형 웹사이트 개발 및 전문적인 유지보수 서비스</p>
+                        </div>
+
+                        <div class="platform-services">
+                            <div class="platform-section">
+                                <h3>지원 플랫폼</h3>
+                                <div class="platform-grid">
+                                    <div class="platform-item">
+                                        <img src="../assets/images/cafe24.gif" alt="Cafe24" class="platform-logo">
+                                        <h4>Cafe24</h4>
+                                        <ul>
+                                            <li>맞춤형 쇼핑몰 제작</li>
+                                            <li>디자인 커스터마이징</li>
+                                            <li>기능 추가 개발</li>
+                                        </ul>
+                                    </div>
+                                    <div class="platform-item">
+                                        <img src="../assets/images/makeshop.jpg" alt="MakeShop" class="platform-logo">
+                                        <h4>MakeShop</h4>
+                                        <ul>
+                                            <li>템플릿 최적화</li>
+                                            <li>프로모션 페이지 제작</li>
+                                            <li>결제 시스템 연동</li>
+                                        </ul>
+                                    </div>
+                                    <div class="platform-item">
+                                        <img src="../assets/images/iamweb.png" alt="아임웹" class="platform-logo">
+                                        <h4>아임웹</h4>
+                                        <ul>
+                                            <li>반응형 웹 구축</li>
+                                            <li>페이지 빌더 활용</li>
+                                            <li>플러그인 개발</li>
+                                        </ul>
+                                    </div>
+                                    <div class="platform-item">
+                                        <img src="../assets/images/wordpress.png" alt="워드프레스" class="platform-logo">
+                                        <h4>WordPress</h4>
+                                        <ul>
+                                            <li>테마 커스터마이징</li>
+                                            <li>플러그인 개발</li>
+                                            <li>다국어 사이트 구축</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="maintenance-section">
+                                <h3>유지보수 서비스</h3>
+                                <div class="service-grid">
+                                    <div class="service-item">
+                                        <div class="service-icon">🔄</div>
+                                        <h4>정기 업데이트</h4>
+                                        <p>보안 패치 및 시스템 업데이트</p>
+                                    </div>
+                                    <div class="service-item">
+                                        <div class="service-icon">🛠️</div>
+                                        <h4>기술 지원</h4>
+                                        <p>오류 수정 및 기능 개선</p>
+                                    </div>
+                                    <div class="service-item">
+                                        <div class="service-icon">📊</div>
+                                        <h4>성능 최적화</h4>
+                                        <p>속도 및 안정성 개선</p>
+                                    </div>
+                                    <div class="service-item">
+                                        <div class="service-icon">💡</div>
+                                        <h4>기능 추가</h4>
+                                        <p>신규 기능 개발 및 통합</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="commerce">
+                        <div class="service-overview">
+                            <h2>통합 커머스 솔루션 연계</h2>
+                            <p>스마트스토어, 카페24, 메이크샵 등 커머스 플랫폼과 연동하는 맞춤형 개발 서비스</p>
+                        </div>
+                        
+                        <div class="commerce-integration">
+                            <div class="platform-section">
+                                <h3>지원 플랫폼</h3>
+                                <p class="platform-common">모든 플랫폼 공통 지원: API 연동, 발송 시스템 연계</p>
+                                <div class="platform-grid">
+                                    <div class="platform-item">
+                                        <img src="../assets/images/smartstore.png" alt="smartstore" class="platform-logo">
+                                        <h4>스마트스토어</h4>
+                                        <ul>
+                                            <li>상품 대량 등록/수정</li>
+                                            <li>주문/배송 자동화</li>
+                                            <li>매출/재고 관리</li>
+                                        </ul>
+                                    </div>
+                                    <div class="platform-item">
+                                        <img src="../assets/images/cafe24.gif" alt="Cafe24" class="platform-logo">
+                                        <h4>Cafe24</h4>
+                                        <ul>
+                                            <li>맞춤형 쇼핑몰 제작</li>
+                                            <li>디자인 스킨 개발</li>
+                                            <li>모바일 최적화</li>
+                                        </ul>
+                                    </div>
+                                    <div class="platform-item">
+                                        <img src="../assets/images/makeshop.jpg" alt="MakeShop" class="platform-logo">
+                                        <h4>MakeShop</h4>
+                                        <ul>
+                                            <li>템플릿 최적화</li>
+                                            <li>커스텀 기능 개발</li>
+                                            <li>프로모션 페이지</li>
+                                        </ul>
+                                    </div>
+                                    <div class="platform-item">
+                                        <img src="../assets/images/iamweb.png" alt="아임웹" class="platform-logo">
+                                        <h4>아임웹</h4>
+                                        <ul>
+                                            <li>반응형 웹 구축</li>
+                                            <li>커스텀 위젯 개발</li>
+                                            <li>페이지 최적화</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="backend">
+                        <div class="service-overview">
+                            <h2>안정적인 백엔드 시스템</h2>
+                            <p>API 개발 및 배치 프로세스 자동화 시스템 구축</p>
+                        </div>
+
+                        <div class="backend-systems">
+                            <div class="system-section">
+                                <div class="system-column">
+                                    <h3>API 개발</h3>
+                                    <div class="tech-stack">
+                                        <div class="tech-item">
+                                            <div class="tech-icon">🍃</div>
+                                            <span>Spring</span>
+                                        </div>
+                                        <div class="tech-item">
+                                            <div class="tech-icon">⚡</div>
+                                            <span>Node.js</span>
+                                        </div>
+                                    </div>
+                                    <div class="system-details">
+                                        <div class="detail-card">
+                                            <h4>RESTful API 설계</h4>
+                                            <ul>
+                                                <li>표준 HTTP 메서드 활용</li>
+                                                <li>리소스 기반 URL 설계</li>
+                                                <li>상태 코드 표준화</li>
+                                                <li>API 문서 자동화</li>
+                                            </ul>
+                                        </div>
+                                        <div class="detail-card">
+                                            <h4>보안 및 인증</h4>
+                                            <ul>
+                                                <li>JWT 토큰 인증</li>
+                                                <li>OAuth2.0 지원</li>
+                                                <li>API 키 관리</li>
+                                                <li>권한 관리</li>
+                                            </ul>
+                                        </div>
+                                        <div class="detail-card">
+                                            <h4>성능 최적화</h4>
+                                            <ul>
+                                                <li>캐시 시스템 구현</li>
+                                                <li>데이터베이스 최적화</li>
+                                                <li>응답 시간 개선</li>
+                                                <li>부하 분산 처리</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="system-divider">
+                                    <div class="divider-line"></div>
+                                    <div class="system-icon">⚙️</div>
+                                    <div class="divider-line"></div>
+                                </div>
+
+                                <div class="system-column">
+                                    <h3>배치 개발</h3>
+                                    <div class="tech-stack">
+                                        <div class="tech-item">
+                                            <div class="tech-icon">🔄</div>
+                                            <span>Spring Batch</span>
+                                        </div>
+                                        <div class="tech-item">
+                                            <div class="tech-icon">⏰</div>
+                                            <span>Quartz</span>
+                                        </div>
+                                    </div>
+                                    <div class="system-details">
+                                        <div class="detail-card">
+                                            <h4>자동화 프로세스</h4>
+                                            <ul>
+                                                <li>정기 작업 스케줄링</li>
+                                                <li>대용량 데이터 처리</li>
+                                                <li>멀티스레드 처리</li>
+                                                <li>작업 분산 처리</li>
+                                            </ul>
+                                        </div>
+                                        <div class="detail-card">
+                                            <h4>데이터 처리</h4>
+                                            <ul>
+                                                <li>데이터 정합성 검증</li>
+                                                <li>트랜잭션 관리</li>
+                                                <li>에러 복구 시스템</li>
+                                                <li>로그 추적 관리</li>
+                                            </ul>
+                                        </div>
+                                        <div class="detail-card">
+                                            <h4>모니터링</h4>
+                                            <ul>
+                                                <li>실시간 상태 모니터링</li>
+                                                <li>알림 시스템 연동</li>
+                                                <li>처리 이력 관리</li>
+                                                <li>성능 지표 분석</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="features-section">
+                                <h3>주요 특징</h3>
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🔒</div>
+                                        <span>보안성</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">⚡</div>
+                                        <span>확장성</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🔄</div>
+                                        <span>안정성</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📊</div>
+                                        <span>신뢰성</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="seo">
+                        <div class="service-overview">
+                            <h2>테크니컬 SEO 서비스</h2>
+                            <p>검색엔진 최적화를 통한 웹사이트 가시성 향상 및 트래픽 분석 시스템 구축</p>
+                        </div>
+
+                        <div class="seo-services">
+                            <div class="search-engine-section">
+                                <h3>검색엔진 최적화</h3>
+                                <div class="engine-grid">
+                                    <div class="engine-item">
+                                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="engine-logo">
+                                        <h4>Google 검색 최적화</h4>
+                                        <ul>
+                                            <li>Google Search Console 설정</li>
+                                            <li>사이트맵 생성 및 등록</li>
+                                            <li>메타 태그 최적화</li>
+                                            <li>구조화된 데이터 마크업</li>
+                                        </ul>
+                                    </div>
+                                    <div class="engine-item">
+                                        <img src="https://www.naver.com/favicon.ico" alt="Naver" class="engine-logo">
+                                        <h4>Naver 검색 최적화</h4>
+                                        <ul>
+                                            <li>네이버 서치어드바이저 설정</li>
+                                            <li>사이트 소유권 확인</li>
+                                            <li>RSS 피드 설정</li>
+                                            <li>실시간 검색 허용 설정</li>
+                                        </ul>
+                                    </div>
+                                    <div class="engine-item">
+                                        <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" alt="Daum" class="engine-logo">
+                                        <h4>Daum 검색 최적화</h4>
+                                        <ul>
+                                            <li>다음 검색등록 설정</li>
+                                            <li>사이트맵 제출</li>
+                                            <li>수집 로봇 설정</li>
+                                            <li>컨텐츠 수집 최적화</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="analytics-section">
+                                <h3>분석 도구 설정</h3>
+                                <div class="tools-grid">
+                                    <div class="tool-item">
+                                        <img src="https://www.google.com/analytics/images/ga_icon_256.png" alt="Google Analytics" class="tool-logo">
+                                        <h4>Google Analytics</h4>
+                                        <ul>
+                                            <li>GA4 속성 설정</li>
+                                            <li>목표 및 전환 설정</li>
+                                            <li>이벤트 추적 설정</li>
+                                            <li>맞춤 보고서 구성</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tool-item">
+                                        <img src="https://www.gstatic.com/analytics-suite/header/suite/v2/ic_tag_manager.svg" alt="Google Tag Manager" class="tool-logo">
+                                        <h4>Google Tag Manager</h4>
+                                        <ul>
+                                            <li>태그 매니저 설치</li>
+                                            <li>이벤트 트리거 설정</li>
+                                            <li>맞춤 태그 구현</li>
+                                            <li>변수 설정 및 관리</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="technical-section">
+                                <h3>기술적 최적화</h3>
+                                <div class="optimization-grid">
+                                    <div class="optimization-item">
+                                        <div class="optimization-icon">⚡</div>
+                                        <h4>성능 최적화</h4>
+                                        <ul>
+                                            <li>페이지 로딩 속도 개선</li>
+                                            <li>모바일 최적화</li>
+                                            <li>이미지 최적화</li>
+                                        </ul>
+                                    </div>
+                                    <div class="optimization-item">
+                                        <div class="optimization-icon">🔍</div>
+                                        <h4>크롤링 최적화</h4>
+                                        <ul>
+                                            <li>robots.txt 설정</li>
+                                            <li>canonical 태그 설정</li>
+                                            <li>URL 구조 최적화</li>
+                                        </ul>
+                                    </div>
+                                    <div class="optimization-item">
+                                        <div class="optimization-icon">📱</div>
+                                        <h4>반응형 최적화</h4>
+                                        <ul>
+                                            <li>모바일 친화성 개선</li>
+                                            <li>뷰포트 설정</li>
+                                            <li>터치 요소 최적화</li>
+                                        </ul>
+                                    </div>
+                                    <div class="optimization-item">
+                                        <div class="optimization-icon">🔒</div>
+                                        <h4>보안 최적화</h4>
+                                        <ul>
+                                            <li>HTTPS 설정</li>
+                                            <li>보안 인증서 관리</li>
+                                            <li>믹스드 컨텐츠 처리</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <div class="company-name">ZEROCO</div>
+                <div class="info-item">
+                    <span class="info-label">Tel</span>
+                    <span>01092334574</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email</span>
+                    <span>zeroco@gmail.com</span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 ZEROCO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js 관련 스크립트 수정 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/controls/OrbitControls.js"></script>
+    <script src="../js/three-demo.js"></script>
+
+    <!-- 그 다음에 메인 자바스크립트 파일 로드 -->
+    <script src="../js/web-development.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- 모달 위치 수정 (body 바로 안쪽 끝부분으로) -->
+    <div class="modal" id="demo-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-three-container" id="modal-three-viewer"></div>
+            <div class="demo-controls">
+                <button class="demo-btn" id="rotate-model">회전</button>
+                <button class="demo-btn" id="change-color">색상 변경</button>
+                <button class="demo-btn" id="zoom-model">확대/축소</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/three-demo.js"></script>
+</body>
+</html> 
