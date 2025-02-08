@@ -1,0 +1,18 @@
+zeroco-portfolio/
+├── assets/
+│   ├── images/         # 이미지 파일들
+│   ├── fonts/          # 폰트 파일들
+│   └── icons/          # 아이콘 파일들
+├── css/
+│   ├── style.css       # 메인 CSS 파일
+│   ├── reset.css       # CSS 초기화
+│   └── responsive.css  # 반응형 스타일
+├── js/
+│   ├── main.js         # 메인 자바스크립트
+│   ├── portfolio.js    # 포트폴리오 관련 기능
+│   └── contact.js      # 견적 문의 관련 기능
+├── pages/
+│   ├── portfolio.html  # 포트폴리오 페이지
+│   ├── reviews.html    # 개발 후기 페이지
+│   └── contact.html    # 견적 문의 페이지
+└── index.html          # 메인 페이지 (소개) 
