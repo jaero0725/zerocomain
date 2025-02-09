@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (mobileMenuButton) {
         mobileMenuButton.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+            mobileMenuButton.classList.toggle('active');
+            // 메뉴 아이콘 변경
+            mobileMenuButton.innerHTML = navLinks.classList.contains('active') ? '×' : '☰';
+            
             // 메뉴가 열렸을 때 스크롤 방지
             if (navLinks.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
@@ -18,15 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
         menuItems.forEach(item => {
             item.addEventListener('click', () => {
                 navLinks.classList.remove('active');
+                mobileMenuButton.classList.remove('active');
+                mobileMenuButton.innerHTML = '☰';
                 document.body.style.overflow = '';
             });
         });
     }
 
-    // 스크롤시 메뉴 닫기
-    window.addEventListener('scroll', function() {
-        if (navLinks.classList.contains('active')) {
-            navLinks.classList.remove('active');
+    // 스크롤시 헤더 스타일 변경
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
         }
     });
 
